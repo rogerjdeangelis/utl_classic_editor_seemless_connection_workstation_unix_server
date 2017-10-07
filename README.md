@@ -42,11 +42,11 @@ Persistent SSH SAS TCIP workstation to unix server. One classic SAS interactive 
     ```    ```
     ```          frqh  ```
     ```    ```
-    ```          A proc frequency will be run on the worrstation 'local_class' for the highlighted dataset  ```
+    ```          A proc frequency will be run on the workstation 'local_class' dataset for the highlighted dataset  ```
     ```          and the results will appear in  my local SAS output window  ```
     ```    ```
     ```    ```
-    ```     I use unx for the unix work directory so you can do things like  ```
+    ```     I use 'unx' for the unix work directory so you can do things like  ```
     ```    ```
     ```        data local_class;  ```
     ```           set unx.class;  ```
@@ -81,7 +81,7 @@ Persistent SSH SAS TCIP workstation to unix server. One classic SAS interactive 
     ```     run;  ```
     ```     %syslput argy=&argy;  ```
     ```     dm "out;clear;";  ```
-    ```     rsubmit;  ```
+    ```     rsubmit;   ** run on server; ```
     ```     options nocenter;  ```
     ```     footnote;  ```
     ```     title1 "frequency of &argx datasets &argd";  ```
